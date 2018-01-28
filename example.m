@@ -12,10 +12,11 @@ clear;clc;close all
 load F1000_input.mat 
 % this example data is a 986-subject resting state fMRI connectome dataset 
 % from the 1000 functional connectome project 
-% (17 subjects’ connectomes were discarded due to corrupted files), 
+% (17 subjectsâ€™ connectomes were discarded due to corrupted files), 
 % downloaded from the USC multimodal connectivity database 
 % (http://umcd.humanconnectomeproject.org). 
 % The dimension of the network is 177x177.  
+% so you will get 177x177x300 matrix once you load this into Matlab
 
 %compute the negative probability p map
 my_mat=zeros(size(NW,1),size(NW,2));
